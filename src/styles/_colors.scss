@@ -1,0 +1,14 @@
+$orangey: rgb(106, 107, 93);
+$bluish: #787878;
+$myown: #dfdfdf;
+$white: white;
+
+$primary: $orangey !default;
+$secondary: $bluish !default;
+$mine: $myown !default;
+$mywhite: $white !default;
+
+$theme_colors: (
+    "mine": $mine,
+    "mywhite": $mywhite,
+)

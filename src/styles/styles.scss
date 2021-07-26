@@ -1,0 +1,93 @@
+/* [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
+
+@import './colors';
+@import './particles';
+
+
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts'; 
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import "~bootstrap/scss/bootstrap";
+
+
+body {
+  background: rgb(212, 212, 212);
+}
+
+body, body * {
+  box-sizing: border-box;
+}
+
+.overflow {
+  overflow: hidden;
+}
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+.neu {
+  width: 200px;
+  height: 200px;
+  border-radius: 40px;
+  box-shadow: 15px 15px 30px rgb(150, 150, 150),
+    -15px -15px 25px rgb(233, 233, 233);
+  background: linear-gradient(-45deg, rgb(170, 170, 170), rgb(227, 227, 227));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  cursor: pointer;
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(-45deg, rgb(227, 227, 227), rgb(160, 160, 160));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+
+.star {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background: #f13c20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.star i {
+  font-size: 44px;
+}
+
+#neu-button {
+  position: absolute;
+  left: -10000px;
+  top: 0;
+}
+
+#neu-button:checked + label {
+  box-shadow: inset 15px 15px 30px rgb(150, 150, 150),
+    inset -15px -15px 25px rgb(233, 233, 233);
+}
+
+#neu-button:checked + label .star {
+  background: $orangey;
+}
+
+.regular-col {
+    height: 500px;
+    border: 10px solid $bluish;
+}

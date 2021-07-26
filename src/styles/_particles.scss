@@ -1,0 +1,17 @@
+
+.particles-container {
+    height: 900px;
+    width: 100%;
+}
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #c3c3c3;
+  background-image: url("https://images.pexels.com/photos/2430365/pexels-photo-2430365.jpeg?cs=srgb&dl=pexels-nastyasensei-2430365.jpg&fm=jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
